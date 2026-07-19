@@ -156,7 +156,7 @@ export default function App() {
 
           {/* RIGHT - DRAGON */}
           <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <img src="/assets/dragon-3d-frontal.png" alt="Trazo-IA Dragon" style={{ maxWidth: '100%', height: 'auto', filter: 'drop-shadow(0 0 40px rgba(229, 57, 53, 0.3))' }} />
+            <img src="/assets/dragon-3d-frontal.png" alt="Trazo-IA Dragon" style={{ maxWidth: '100%', height: 'auto', filter: 'drop-shadow(0 0 40px rgba(229, 57, 53, 0.3))', mixBlendMode: 'lighten' }} />
           </motion.div>
         </div>
       </section>
