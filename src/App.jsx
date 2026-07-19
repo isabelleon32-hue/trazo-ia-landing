@@ -154,9 +154,16 @@ export default function App() {
             </motion.div>
           </motion.div>
 
-          {/* RIGHT - DRAGON */}
+          {/* RIGHT - LOGO/BRAND */}
           <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <img src="/assets/dragon-3d-frontal.png" alt="Trazo-IA Dragon" style={{ maxWidth: '100%', height: 'auto', filter: 'drop-shadow(0 0 40px rgba(229, 57, 53, 0.3))', mixBlendMode: 'lighten' }} />
+            <div style={{ textAlign: 'center' }}>
+              <motion.div animate={{ y: [0, -20, 0] }} transition={{ duration: 3, repeat: Infinity }} style={{ fontSize: 'clamp(60px, 12vw, 140px)', fontWeight: '900', lineHeight: '1', marginBottom: '20px', background: `linear-gradient(135deg, ${colors.red}, #FF6B35)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', filter: 'drop-shadow(0 0 40px rgba(229, 57, 53, 0.2))' }}>
+                TRAZO<br/>IA
+              </motion.div>
+              <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }} style={{ fontSize: '16px', color: colors.gray600, fontWeight: '500', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+                Automatizaciones Inteligentes
+              </motion.p>
+            </div>
           </motion.div>
         </div>
       </section>
